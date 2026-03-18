@@ -10,7 +10,7 @@ body {
 header {
   background-color: #1e3a8a;
   color: white;
-  padding: 5rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -207,4 +207,8 @@ select:focus {
 form {
   max-width: 700px;
   margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
 }
