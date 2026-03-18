@@ -129,3 +129,9 @@ function getAPI() {
 };
 
 
+const mensaje = document.getElementById("mensaje");
+const charCount = document.getElementById("charCount");
+
+mensaje.addEventListener("input", function () {
+  charCount.textContent = mensaje.value.length + " / 500";
+});
