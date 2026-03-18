@@ -1,19 +1,21 @@
 body {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 1rem;
-  color: black;
+  font-size: 1.05rem;
+  color: #1f2933;
   margin: 0;
+  background-color: #f5f7fa;
+
 }
 
 header {
-  background-color: rgb(7, 167, 153);
+  background-color: #1e3a8a;
   color: white;
   padding: 5rem;
   text-align: center;
 }
 
 main {
-  padding: 5rem;
+  padding: 4rem 6rem;
   text-align: left;
 }
 
@@ -52,27 +54,31 @@ h1 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 a {
-  color: #02524e;
+     color: #2563eb;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
+  color: #1e40af;
   text-decoration: underline;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
-  color: #34495e;
+  color: #1e3a8a;
 }
 
 /* FORMULARIO */
@@ -87,15 +93,15 @@ select {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
   border-radius: 0.5rem;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
 }
 
 button {
   width: 100%;
   padding: 1rem;
-  background-color: #02463a;
+  background-color: #2563eb;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -105,8 +111,8 @@ button {
 footer {
   margin-top: 2rem;
   padding: 1rem;
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 0.95rem;
+  color: #52606d;
   text-align: center;
 }
 
@@ -137,4 +143,24 @@ thead {
   }
 }
 
+i {
+  color: #1e3a8a;
+}
 
+header {
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+}
+
+header a {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+header i {
+  color: #2563eb;
+}
