@@ -46,7 +46,7 @@ Se ha generado una API que permite agregar, editar, consultar y eliminar datos d
 Se realizaron pruebas exploratorias en navegadores web y móviles para asegurar el correcto funcionamiento de la interfaz y la interacción con el usuario.
 
 ### Pruebas de API
-- Colección en POSTMAN (requiere acceso): [POSTMAN Collection](https://www.postman.com/bootcampqatesting/api-usuarios/collection/x5mwyvf/api-de-usuarios) 
+- Colección en POSTMAN (requiere acceso): [POSTMAN Collection](https://grimanesaqa-8525787.postman.co/workspace/c3bc6233-7477-4fd8-8245-fc19eaecc152/collection/53334927-f84f5978-26a7-4386-a231-863c375d7b27?action=share&source=copy-link&creator=53334927) 
 Se probó la **API del formulario de contacto** y se validó el correcto almacenamiento de los datos en la base de datos. 
 - Se probaron las operaciones **GET, POST, PATCH y DELETE**, verificando respuestas correctas y manejo de errores.  
 - Se implementó un **flujo de integración continua** con GitHub Actions, ejecutando automáticamente las pruebas de API mediante Newman cada semana. 
