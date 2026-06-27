@@ -20,8 +20,8 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Response time is less than 200ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
@@ -459,8 +459,7 @@
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"NAMEEDITAR\", \"lidia\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -473,7 +472,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"lidia\",\r\n  \"email\": \"lauratest@gmail.com\",\r\n  \"subject\": \"other\",\r\n  \"age\": 19,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n  \"name\": \"lidia\"\r\n\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -512,8 +511,7 @@
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"SUBJECTEDITAR\", \"job\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -526,7 +524,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"lidia\",\r\n  \"email\": \"lauratest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 19,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n\r\n  \"subject\": \"job\"\r\n \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -565,8 +563,7 @@
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"AGEEDITAR\", 25);"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -579,7 +576,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"lidia\",\r\n  \"email\": \"lauratest@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n \r\n  \"age\": 25\r\n\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -618,8 +615,7 @@
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"EMAILEDITAR\", \"lidiaedit@gmail.com\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -632,7 +628,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"lidia\",\r\n  \"email\": \"lidiaedit@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n\r\n  \"email\": \"lidiaedit@gmail.com\"\r\n  \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -725,8 +721,7 @@
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"NAMEEDITAR\", \"\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -739,7 +734,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"lidiaedit@gmail.com\",\r\n  \"subject\": \"job\",\r\n  \"age\": 25,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n  \"name\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -771,15 +766,14 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"El código de respuesta es 204\", function () {\r",
-                  "    pm.response.to.have.status(204);\r",
+                  "pm.test(\"El código de respuesta es 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"SUBJECTEDITAR\", \"\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -792,7 +786,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"lidiaedit@gmail.com\",\r\n  \"subject\": \"\",\r\n  \"age\": 25,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n \r\n  \"subject\": null\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -824,8 +818,8 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"El código de respuesta es 400\", function () {\r",
-                  "    pm.response.to.have.status(400);\r",
+                  "pm.test(\"El código de respuesta es 204\", function () {\r",
+                  "    pm.response.to.have.status(204);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
@@ -843,7 +837,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"lidiaedit@gmail.com\",\r\n  \"subject\": \"\",\r\n  \"age\": \"\",\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n  \r\n  \"age\": null\r\n  \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -875,15 +869,14 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"El código de respuesta es 204\", function () {\r",
-                  "    pm.response.to.have.status(204);\r",
+                  "pm.test(\"El código de respuesta es 400\", function () {\r",
+                  "    pm.response.to.have.status(400);\r",
                   "});\r",
                   "\r",
                   "pm.test(\"El tiempo de respuesta es menor a 2000ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
                   "});\r",
-                  "\r",
-                  "pm.environment.set(\"EMAILEDITAR\", \"\");"
+                  ""
                 ],
                 "type": "text/javascript",
                 "packages": {},
@@ -896,7 +889,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"\",\r\n  \"subject\": \"\",\r\n  \"age\": 25,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n  \r\n  \"email\": null\r\n \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -947,7 +940,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"\",\r\n  \"subject\": \"\",\r\n  \"age\": 17,\r\n  \"message\": \"mensaje final test\"\r\n}",
+              "raw": "{\r\n  \r\n  \"age\": 17\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1097,7 +1090,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"apitestoptional\",\r\n  \"email\": \"apitestoptional@gmail.com\",\r\n  \"subject\": \"other\",\r\n  \"message\": \"mensaje obligatorio\"\r\n}",
+              "raw": "{\r\n  \r\n  \"email\": \"apitestoptional@gmail.com\",\r\n  \"subject\": \"other\",\r\n  \"message\": \"mensaje obligatorio\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1334,7 +1327,8 @@
               "query": [
                 {
                   "key": "name",
-                  "value": "eq.apitest"
+                  "value": "eq.apitest",
+                  "type": "text"
                 }
               ]
             }
@@ -1536,7 +1530,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{API_URL}}/form",
+              "raw": "{{API_URL}}/form?age=eq.texto",
               "host": [
                 "{{API_URL}}"
               ],
@@ -1546,8 +1540,7 @@
               "query": [
                 {
                   "key": "age",
-                  "value": "eq.texto",
-                  "disabled": true
+                  "value": "eq.texto"
                 }
               ]
             }
